@@ -9,9 +9,4 @@ export class TaskController {
   async getTasks() {
     return await this.taskService.getAllTasks();
   }
-
-  @Post()
-  async createTask(@Body() { title, description, isDone }) {
-    return { title, description, isDone };
-  }
 }
